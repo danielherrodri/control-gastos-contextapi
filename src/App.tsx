@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <header className="bg-blue-600 py-8 max-h-72">
-        <h1 className="uppercase font-black text-4xl text-white">
+        <h1 className="uppercase font-black text-4xl text-white text-center">
           Planificador de Gastos
         </h1>
       </header>
