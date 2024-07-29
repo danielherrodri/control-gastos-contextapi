@@ -49,7 +49,7 @@ const createExpense = (draftExpense: DraftExpense): Expense => {
 export const budgetReducer = (
     state: BudgetState = initialState,
     action: BudgetActions
-) => {
+): BudgetState => {
     if (action.type === 'add-budget') {
         return {
             ...state,
@@ -120,5 +120,5 @@ export const budgetReducer = (
             currentCategory: action.payload.id
         }
     }
-
+    return state
 }
